@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aetheria es un centro integral especializado en la provisión de servicios y soluciones informáticas de vanguardia para micro, pequeñas y medianas empresas.">
+    <meta name="keywords" content="Aetheria, servicios informáticos, soluciones tecnológicas, microempresas, pequeñas empresas, medianas empresas, innovación tecnológica, soporte técnico, desarrollo de software, consultoría IT">
+    <meta name="author" content="Aetheria Team">
+    <title>Aetheria</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="pagina">
+        <header class="encabezado">
+            <div class="encabezado__contenido">
+                <div class="marca">
+                    <h1>Servicios Tecnológicos</h1>
+                    <p>Soluciones para tu organización</p>
+                </div>
+
+                <nav class="menu" aria-label="Principal">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+
+                <div class="reloj" role="timer" aria-label="Hora actual">
+                    <span id="reloj">--:--:-- --</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="inicio" class="hero">
+                <h2>Bienvenidos a Aetheria</h2>
+                <p>En Aetheria, nos dedicamos a ofrecer soluciones informáticas de vanguardia para micro, pequeñas y medianas empresas. Nuestro objetivo es impulsar la innovación tecnológica y brindar soporte técnico confiable.</p>
+                <a class="boton boton--primario" href="#contacto">Solicitar información</a>
+            </section>
+
+            <section id="servicios">
+                <h2>Servicios</h2>
+
+                <div class="tarjetas">
+                    <article>
+                        <h3>Soporte técnico</h3>
+                        <p>Ofrecemos soporte técnico especializado para resolver problemas y mantener tu infraestructura informática en óptimo funcionamiento.</p>
+                    </article>
+                    <article>
+                        <h3>Desarrollo web</h3>
+                        <p>Ofrecemos soluciones completas para el desarrollo y despliegue de aplicaciones web modernas y escalables.</p>
+                    </article>
+                </div>
+
+                <div class="info-adicional">
+                    <h3>Información adicional</h3>
+                    <p>Diseñamos e implementamos redes corporativas seguras y eficientes para optimizar la comunicación interna.</p>
+                    <ul>
+                        <li>Asistencia remota y presencial</li>
+                        <li>Mantenimiento preventivo y correctivo</li>
+                        <li>Actualización de software y hardware</li>
+                        <li>Monitoreo de sistemas y redes</li>
+                        <li>Infraestructura y redes corporativas</li>
+                        <li>Ciberseguridad y protección de datos</li>
+                        <li>Servicios de nube y respaldos automatizados</li>
+                        <li>Consultoría e implementación de base de datos</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="nosotros">
+                <h2>Sobre nosotros</h2>
+                <div class="nosotros__columnas">
+                    <article>
+                        <h3>Quiénes somos</h3>
+                        <p>Aetheria es un centro integral especializado en la provisión de servicios y soluciones informáticas de vanguardia para micro, pequeñas y medianas empresas. Nuestro equipo de expertos está comprometido con la innovación tecnológica y la excelencia en el servicio.</p>
+                    </article>
+                    <article>
+                        <h3>Nuestra visión</h3>
+                        <p>Aetheria se fundó con la visión de convertirse en un socio confiable para las empresas que buscan optimizar sus operaciones mediante soluciones tecnológicas avanzadas. Nos enorgullece ofrecer un enfoque personalizado y adaptado a las necesidades específicas de cada cliente.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contacto">
+                <h2>Formulario</h2>
+                <form class="formulario" id="formulario-contacto" action="#" method="post" novalidate>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre" autocomplete="name" aria-describedby="error-nombre" required>
+                        <span class="error" id="error-nombre" role="alert"></span>
+                    </div>
+                    <div>
+                        <label for="correo">Correo:</label>
+                        <input id="correo" name="correo" type="email" placeholder="pablo@dominio" autocomplete="email" aria-describedby="error-correo" required>
+                        <span class="error" id="error-correo" role="alert"></span>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input id="telefono" name="telefono" type="tel" placeholder="656 123 4567" autocomplete="tel" aria-describedby="error-telefono" required>
+                        <span class="error" id="error-telefono" role="alert"></span>
+                    </div>
+                    <div>
+                        <label for="servicio">Servicio:</label>
+                        <select id="servicio" name="servicio" aria-describedby="error-servicio info-servicio" required>
+                            <option value="" selected disabled>Selecciona un servicio</option>
+                            <option>Soporte técnico</option>
+                            <option>Desarrollo web</option>
+                            <option>Redes corporativas</option>
+                            <option>Ciberseguridad</option>
+                            <option>Nube y respaldos</option>
+                            <option>Bases de datos</option>
+                        </select>
+                        <span class="error" id="error-servicio" role="alert"></span>
+                        <p class="aviso" id="info-servicio" aria-live="polite"></p>
+                    </div>
+                    <div class="completo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué necesitas" aria-describedby="error-mensaje" required></textarea>
+                        <span class="error" id="error-mensaje" role="alert"></span>
+                    </div>
+                    <div class="completo acciones">
+                        <button class="boton boton--primario" type="submit">Enviar</button>
+                        <button class="boton boton--secundario" type="reset">Borrar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="pie">
+            &copy; 2026 Servicios Tecnológicos
+        </footer>
+    </div>
+
+    <dialog id="confirmacion" class="confirmacion" aria-labelledby="confirmacion-titulo">
+        <h2 id="confirmacion-titulo"></h2>
+        <p id="confirmacion-texto"></p>
+        <dl id="confirmacion-datos"></dl>
+        <div class="confirmacion__acciones" id="acciones-revision">
+            <button type="button" class="boton boton--primario" id="confirmacion-enviar">Confirmar y enviar</button>
+            <button type="button" class="boton boton--secundario" id="confirmacion-editar">Volver a editar</button>
+        </div>
+        <div class="confirmacion__acciones" id="acciones-exito" hidden>
+            <button type="button" class="boton boton--primario" id="confirmacion-aceptar">Aceptar</button>
+            <button type="button" class="boton boton--secundario" id="confirmacion-borrar">Eliminar registro</button>
+        </div>
+    </dialog>
+    <div class="barra-estado" id="barra-estado" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
